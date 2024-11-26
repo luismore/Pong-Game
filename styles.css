@@ -1,0 +1,67 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Área de juego */
+#juego {
+    background-color: #2c2c3e;
+    border: 5px solid #4caf50;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Barra */
+rect {
+    fill: #4caf50;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    rx: 5;
+}
+
+/* Bola */
+circle {
+    fill: #ff5722;
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+/* Marcador */
+#marcador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Puntaje */
+#puntosIzquierda, #puntosDerecha {
+    background-color: #2c2c3e;
+    padding: 20px 40px;
+    border-radius: 15px;
+    color: #4caf50;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    font-size: 4rem;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+#puntosIzquierda:active, #puntosDerecha:active {
+    transform: scale(1.1);
+    background-color: #3d3d5c;
+}
